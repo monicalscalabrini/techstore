@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Carrinho - TechStore</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="toast" class="toast">Produto adicionado ao carrinho</div>
+
+<!-- MENU -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li>
+            <a href="carrinho.html">
+                Carrinho (<span id="contador-carrinho">0</span>)
+            </a>
+        </li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="faleconosco.html">Fale Conosco</a></li>
+    </ul>
+</nav>
+
+<!-- TÍTULO -->
+<h1 style="text-align: center; margin-top: 20px;">
+    🛒 Seu Carrinho
+</h1>
+
+<!-- LISTA DE PRODUTOS -->
+<ul id="lista-carrinho" class="carrinho-lista"></ul>
+
+<!-- TOTAL -->
+<h2 id="total-carrinho" style="text-align: center;">
+    Total: R$ 0
+</h2>
+
+<!-- BOTÃO PAGAMENTO -->
+<div style="text-align: center; margin: 30px;">
+    <a href="checkout.html">
+        <button style="padding: 12px 20px; font-size: 16px; cursor: pointer;">
+            💳 Ir para pagamento
+        </button>
+    </a>
+</div>
+
+<!-- SCRIPT -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>

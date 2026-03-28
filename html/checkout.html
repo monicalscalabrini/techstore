@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+    </ul>
+</nav>
+
+<h1 style="text-align:center;">Finalizar Compra</h1>
+
+<ul id="resumo-carrinho" class="carrinho-lista"></ul>
+
+<h2 id="total-carrinho" style="text-align:center;">Total: R$ 0</h2>
+
+<!-- FORMAS DE PAGAMENTO -->
+<div style="text-align:center; margin:20px;">
+    <label>
+        <input type="radio" name="pagamento" value="Cartão" checked>
+        Cartão
+    </label>
+
+    <label>
+        <input type="radio" name="pagamento" value="PIX">
+        PIX
+    </label>
+
+    <label>
+        <input type="radio" name="pagamento" value="Boleto">
+        Boleto
+    </label>
+</div>
+
+<!-- BOTÃO -->
+<div style="text-align:center;">
+    <button onclick="finalizarCompra()">💳 Finalizar Pagamento</button>
+</div>
+
+<script src="../js/script.js"></script>
+
+<script>
+// ===== CARREGAR RESUMO =====
+function carregarResumo() {
+    let lista = document.getElementById("resumo-carrinho");
+    let totalElemento = document.getElementById("total-carrinho");
+
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    lista.innerHTML = "";
+
+    let total = 0;
+
+    carrinho.forEach(produto => {
+        let item = document.createElement("li");
+
+        item.textContent =
+            produto.nome + " - R$ " +
+            produto.preco.toLocaleString("pt-BR", {
+                minimumFractionDigits: 2
+            });
+
+        lista.appendChild(item);
+
+        total += produto.preco;
+    });
+
+    totalElemento.textContent =
+        "Total: R$ " +
+        total.toLocaleString("pt-BR", {
+            minimumFractionDigits: 2
+        });
+}
+
+// ===== FINALIZAR COMPRA =====
+function finalizarCompra() {
+    let opcao = document.querySelector('input[name="pagamento"]:checked').value;
+
+    localStorage.setItem("pagamento", opcao);
+
+    window.location.href = "confirmacao.html";
+}
+
+// ===== INICIAR =====
+carregarResumo();
+</script>
+
+</body>
+</html>
