@@ -45,12 +45,7 @@ nav ul li a:hover {
     background-color: #0077ff;
 }
 
-/* BANNER */    /* parece que esta duplicado devo apagar)*/
-.banner {
-    position: relative;
-    height: 320px;
-    overflow: hidden;
-}
+
 
 .slider {
     width: 100%;
@@ -73,14 +68,13 @@ nav ul li a:hover {
 
 /* BOTÃO */
 .btn {
-    background-color: #ff9900;
-    color: black;
-    padding: 12px 28px;
+    background: #0077ff;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    border-radius: 5px;
 }
+
 
 .btn:hover {
     background-color: #e68a00;
@@ -333,11 +327,7 @@ footer {
 .logo {
     border-radius: 12px;
 }
-.banner {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-}
+
 
 .slider {
     width: 100%;
@@ -550,3 +540,66 @@ body {
 
 
 
+/* Texto centralizado */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+
+/* Botão bonito */
+.btn 
+    background: #0077ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+    .banner {
+    position: relative;
+    width: 100%;
+    height: 180px; /* altura do banner */
+    overflow: hidden;
+}
+.carrinho-animado {
+    position: absolute;
+    font-size: 40px;
+    animation: moverCarrinho 9s linear infinite; /* velocidade do carrinho no banner */
+}
+.home-cards video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}.banner {
+    margin-bottom: 40px;
+}
+
+.highlight {
+    margin-bottom: 40px;
+}.banner-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+   .home-cards video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+}.home-cards article {
+    overflow: hidden;
+}.home-cards video {
+    max-height: 180px;
+}

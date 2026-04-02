@@ -7,14 +7,14 @@
     <meta name="author" content="Monica Leite Scalabrini">
     <title>TechStore - Vendas Online</title>
 
-    <!-- CSS corrigido -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div id="toast" class="toast">Produto adicionado ao carrinho</div>
-<header>  
-</header>
+
+<div id="toast" class="toast">Produto adicionado ao carrinho</div>
+
+<header></header>
 
 <nav class="menu">
     <a href="index.html" class="menu-logo">
@@ -25,10 +25,10 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="produtos.html">Produtos</a></li>
         <li>
-  <a href="carrinho.html">
-    Carrinho (<span id="contador-carrinho">0</span>)
-  </a>
-</li>
+            <a href="carrinho.html">
+                Carrinho (<span id="contador-carrinho">0</span>)
+            </a>
+        </li>
         <li><a href="ofertas.html">Ofertas</a></li>
         <li><a href="faleconosco.html">Fale Conosco</a></li>
     </ul>
@@ -36,26 +36,30 @@
 
 <main>
 
+<!-- ===== BANNER ===== -->
 <section class="banner">
-    <div class="slider">
-        <img src="../imagens/imagemtech1.jpg" class="slide active">
-        <img src="../imagens/imagemtech2.jpg" class="slide">
-        <img src="../imagens/imagemtech3.jpg" class="slide">
-        <img src="../imagens/banner.jpg" class="slide">
+    <div class="banner-text">
+        <h1>Bem-vindo à TechStore</h1>
+        <p>Os melhores produtos com os melhores preços</p>
+        <a href="produtos.html" class="btn">Ver produtos</a>
     </div>
 </section>
 
+<!-- ===== DIFERENCIAIS ===== -->
 <section class="highlight">
     <h2>Por que escolher a TechStore?</h2>
-    <div class="highlight-grid">   <!-- Efeito chuva -->
+
+    <div class="highlight-grid">
         <div>
             <h3>🚀 Tecnologia de Ponta</h3>
             <p>Produtos modernos e de alto desempenho.</p>
         </div>
+
         <div>
             <h3>🔒 Compra Segura</h3>
             <p>Ambiente protegido e confiável.</p>
         </div>
+
         <div>
             <h3>⚡ Entrega Rápida</h3>
             <p>Envio ágil para todo o Brasil.</p>
@@ -63,12 +67,18 @@
     </div>
 </section>
 
+<!-- ===== CARDS ===== -->
 <section class="home-cards">
 
+
     <article>
-        <img src="../imagens/notebook.png" alt="Notebook">
-        <h2>Bem-vindo à TechStore</h2>
-        <p>Encontre os melhores eletrônicos com preços imperdíveis.</p>
+        <img src="../imagens/celular.png" alt="Smartphone">
+        <h2>Destaques</h2>
+        <ul>
+            <li>Notebooks</li>
+            <li>Smartphones</li>
+            <li>Acessórios</li>
+        </ul>
     </article>
 
     <article>
@@ -81,26 +91,25 @@
     </article>
 
     <article>
-        <img src="../imagens/celular.png" alt="Smartphone">
-        <h2>Destaques</h2>
-        <ul>
-            <li>Notebooks</li>
-            <li>Smartphones</li>
-            <li>Acessórios</li>
-        </ul>
+        <img src="../imagens/notebook.png" alt="Notebook">
+        <h2>Bem-vindo à TechStore</h2>
+        <p>Encontre os melhores eletrônicos com preços imperdíveis.</p>
     </article>
+
+
 
 </section>
 
-
- </main>
+</main>
 
 <footer>
     <p>© 2026 TechStore - Todos os direitos reservados</p>
 </footer>
 
-
 <script src="../js/script.js"></script>
 
 </body>
 </html>
+
+
+
