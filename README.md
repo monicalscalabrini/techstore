@@ -1,6 +1,6 @@
 # 🛒 Vendas Online
 
-Projeto de loja virtual desenvolvido como atividade acadêmica, com foco em estrutura de páginas web utilizando HTML e CSS.
+Projeto de loja virtual, primeiro  desenvolvimento de site como atividade acadêmica, com foco em estrutura de páginas web utilizando HTML e CSS.
 
 ---
 
