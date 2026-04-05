@@ -41,5 +41,5 @@ Este projeto faz parte do meu processo de transição para a área de tecnologia
 ## 👩‍💻 Autora
 
 Monica Leite Scalabrini  
-Estudante de Análise e Desenvolvimento de Sistemas  
+Estudante de Análise e Desenvolvimento de Sistemas  (primeiro semestre)
 Desenvolvedora Front-End em formação
