@@ -21,7 +21,7 @@ O objetivo principal é praticar:
 ✔ Página inicial com produtos  
 ✔ Navegação entre páginas  
 ✔ Layout visual organizado  
-❌ Carrinho de compras (em desenvolvimento)
+
 
 ---
 
